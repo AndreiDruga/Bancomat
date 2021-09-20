@@ -1,0 +1,16 @@
+D:\repo\Bancomat\Bancomat\bin\Debug\net5.0\Bancomat.exe
+D:\repo\Bancomat\Bancomat\bin\Debug\net5.0\Bancomat.deps.json
+D:\repo\Bancomat\Bancomat\bin\Debug\net5.0\Bancomat.runtimeconfig.json
+D:\repo\Bancomat\Bancomat\bin\Debug\net5.0\Bancomat.runtimeconfig.dev.json
+D:\repo\Bancomat\Bancomat\bin\Debug\net5.0\Bancomat.dll
+D:\repo\Bancomat\Bancomat\bin\Debug\net5.0\ref\Bancomat.dll
+D:\repo\Bancomat\Bancomat\bin\Debug\net5.0\Bancomat.pdb
+D:\repo\Bancomat\Bancomat\obj\Debug\net5.0\Bancomat.csproj.AssemblyReference.cache
+D:\repo\Bancomat\Bancomat\obj\Debug\net5.0\Bancomat.GeneratedMSBuildEditorConfig.editorconfig
+D:\repo\Bancomat\Bancomat\obj\Debug\net5.0\Bancomat.AssemblyInfoInputs.cache
+D:\repo\Bancomat\Bancomat\obj\Debug\net5.0\Bancomat.AssemblyInfo.cs
+D:\repo\Bancomat\Bancomat\obj\Debug\net5.0\Bancomat.csproj.CoreCompileInputs.cache
+D:\repo\Bancomat\Bancomat\obj\Debug\net5.0\Bancomat.dll
+D:\repo\Bancomat\Bancomat\obj\Debug\net5.0\ref\Bancomat.dll
+D:\repo\Bancomat\Bancomat\obj\Debug\net5.0\Bancomat.pdb
+D:\repo\Bancomat\Bancomat\obj\Debug\net5.0\Bancomat.genruntimeconfig.cache

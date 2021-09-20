@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 
-namespace ConsoleApp3
+namespace Bancomat
 {
     /// <summary>
     /// Bancomat
