@@ -51,12 +51,17 @@ namespace Bancomat
             {
                 Console.WriteLine("You are logged!");
                 //afisam meniul
-                 Console.WriteLine("Alege o optiune:");
+                 Console.WriteLine("Alege o optiune:1 interogare solt \r\n optiune 2: depunere \r\n optiune 3: retragere \r\n optiune 4: schimbare pin optiune 5");
             }
             else
             {
                 Console.WriteLine("Authentication failed!");
             }
+            // afisare sold
+            int optiune=;
+            switch(optiune){
+                case=1:
+                    
 
             Console.ReadKey();
         }
