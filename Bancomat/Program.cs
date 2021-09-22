@@ -50,7 +50,8 @@ namespace Bancomat
             if (foundAccount != null)
             {
                 Console.WriteLine("You are logged!");
-                //afisam meniu pentru 
+                //afisam meniul
+                 Console.WriteLine("Alege o optiune:");
             }
             else
             {
