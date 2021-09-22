@@ -58,6 +58,22 @@ namespace Bancomat
                 Console.WriteLine("Authentication failed!");
             }
             // afisare sold
+            // iti las aici ideile pe care le am pentru ca nu am reusit sa l fac.
+            //sa nu scrii cod,doar sa mi dai o idee
+            //pentru a aceesa soldul contului as vrea sa folosesc foundAccount.Sold.
+            //si  il afisez in ccazul 1.
+            //pentru retragere o sa fac  o functie care sa decrementeze if(ValRetrasa<=Sold){
+            //foundAccount.Sold=foundAccount.Sold - valoareRetrasa
+            //Console.WriteLine({foundAccount});
+            //else _Console.WriteLine("Fonduri insuficiente");
+            // int valRetrasa= int.Parse(Console.ReadLine());
+            //pentru depunere tot o functie care sa faca foundAccount.Sold + valoareDepusa
+            //schimbare pin:string newPin= Console.ReadLine();
+            // fac update foundAccount.Pin= newPin;
+            // si il af cu un WriteLine($"noul pin este{foundAccount.Pin}"};
+            //transfer catre alt cont : aici inca nu mi am dat seama
+            // vreau te rog sa mi spui daca sunt ok ideile si daca pot sa folosesc switch 
+            //multumeesc!
             int optiune=;
             switch(optiune){
                 case=1:
