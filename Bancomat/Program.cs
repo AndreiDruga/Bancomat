@@ -51,7 +51,7 @@ namespace Bancomat
             {
                 Console.WriteLine("You are logged!");
                 //afisam meniul
-                 Console.WriteLine("Alege o optiune:1 interogare solt \r\n optiune 2: depunere \r\n optiune 3: retragere \r\n optiune 4: schimbare pin optiune 5");
+                 Console.WriteLine("Alege o optiune:1 interogare solt \r\n optiune 2: depunere \r\n optiune 3: retragere \r\n optiune 4: schimbare pin \r\n  optiune 5: logout");
             }
             else
             {
@@ -75,8 +75,9 @@ namespace Bancomat
             // vreau te rog sa mi spui daca sunt ok ideile si daca pot sa folosesc switch 
             //multumeesc!
             int optiune=;
-            switch(optiune){
-                case=1:
+           while(optiune!=5){
+               it(optiune=1){
+                   CConsole.WriteLine($"Soldul este: {foundAccount.Sold}");
                     
 
             Console.ReadKey();
