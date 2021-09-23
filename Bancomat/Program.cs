@@ -76,8 +76,22 @@ namespace Bancomat
             //multumeesc!
             int optiune=;
            while(optiune!=5){
-               it(optiune=1){
+               if(optiune==1){
                    CConsole.WriteLine($"Soldul este: {foundAccount.Sold}");
+                   break;}
+               else if(optiune==2){
+                    Console.Writeline("introduceti valoarea depusa: ");
+                   int valDepusa= int.Parse(Console.ReadLine());
+                   foundAccount.Sold+=valDepusa;
+                   Console.WriteLine($"Noul sold este: {foundAccount.Sold}");
+                   break;}
+               
+               else if(optiune==3){
+                   Console.Writeline("introduceti valoarea retrasa: ");
+                   int valRetrasa=int.Parse(Console.ReadLine());
+                   if(valRetrasa>foundAccount.Sold){
+                        Console.Writeline("Fonduri insuficiente");}
+                   else{ Console.Writeline($"Sold curent: {foundAccount.Sold-=foundAccount.Sold - valRetrasa}");}
                     
 
             Console.ReadKey();
