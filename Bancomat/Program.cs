@@ -91,7 +91,23 @@ namespace Bancomat
                    int valRetrasa=int.Parse(Console.ReadLine());
                    if(valRetrasa>foundAccount.Sold){
                         Console.Writeline("Fonduri insuficiente");}
-                   else{ Console.Writeline($"Sold curent: {foundAccount.Sold-=foundAccount.Sold - valRetrasa}");}
+                   else{ Console.Writeline($"Sold curent: {foundAccount.Sold-=foundAccount.Sold - valRetrasa}");
+                       break;}}
+                   
+                   else if(optiune==4){
+                        Console.Writeline("introduceti noul pin: ");
+                      int pinNou=int.Parse(Console.ReadLine());
+                       string lungimePin=Console.ReadLine();
+                       
+                       if(lungimePin.length<6){
+                            Console.Writeline("Lungimea minima este de 6 caractere");
+                           break;}
+                       else{Console.Writeline("Pinul a fost schimbat");
+                         foundAccount.Pin=pinNou;
+                            break;}}
+                     else if(optiune==5){
+                         Account.Exit(0);}
+                       
                     
 
             Console.ReadKey();
