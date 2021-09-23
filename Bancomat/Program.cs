@@ -18,7 +18,7 @@ namespace Bancomat
     {
         static void Main(string[] args)
         {
-            string[] lines = File.ReadAllLines("conturi.txt");
+            string[] lines = File.ReadAllLines("Conturi.txt");
 
             List<Account> accounts = new List<Account>();
             for (int index = 0; index < lines.Length; index += 3)
@@ -51,7 +51,7 @@ namespace Bancomat
             {
                 Console.WriteLine("You are logged!");
                 //afisam meniul
-                 Console.WriteLine("Alege o optiune:1 interogare solt \r\n optiune 2: depunere \r\n optiune 3: retragere \r\n optiune 4: schimbare pin \r\n  optiune 5: logout");
+                Console.WriteLine("Alege o optiune:1 interogare solt \r\n optiune 2: depunere \r\n optiune 3: retragere \r\n optiune 4: schimbare pin \r\n  optiune 5: logout");
             }
             else
             {
@@ -74,50 +74,62 @@ namespace Bancomat
             //transfer catre alt cont : aici inca nu mi am dat seama
             // vreau te rog sa mi spui daca sunt ok ideile si daca pot sa folosesc switch 
             //multumeesc!
-            int optiune=;
-           while(optiune!=5){
-               if(optiune==1){
-                   CConsole.WriteLine($"Soldul este: {foundAccount.Sold}");
-                   break;}
-               else if(optiune==2){
-                    Console.Writeline("introduceti valoarea depusa: ");
-                   int valDepusa= int.Parse(Console.ReadLine());
-                   foundAccount.Sold+=valDepusa;
-                   Console.WriteLine($"Noul sold este: {foundAccount.Sold}");
-                   break;}
-               
-               else if(optiune==3){
-                   Console.Writeline("introduceti valoarea retrasa: ");
-                   int valRetrasa=int.Parse(Console.ReadLine());
-                   if(valRetrasa>foundAccount.Sold){
-                        Console.Writeline("Fonduri insuficiente");}
-                   else{ Console.Writeline($"Sold curent: {foundAccount.Sold-=foundAccount.Sold - valRetrasa}");
-                       break;}}
-                   
-                   else if(optiune==4){
-                        Console.Writeline("introduceti noul pin: ");
-                      int pinNou=int.Parse(Console.ReadLine());
-                       string lungimePin=Console.ReadLine();
-                       
-                       if(lungimePin.length<6){
-                            Console.Writeline("Lungimea minima este de 6 caractere");
-                           break;}
-                       else{Console.Writeline("Pinul a fost schimbat");
-                         foundAccount.Pin=pinNou;
-                            break;}}
-                     else if(optiune==5){
-                         Account.Exit(0);}
-                       
-                    
+            int optiune = int.Parse(Console.ReadLine());
+            while (optiune != 5)
+            {
+                if (optiune == 1)
+                {
+                    Console.WriteLine($"Soldul este: {foundAccount.Sold}");
+                }
+                else if (optiune == 2)
+                {
+                    Console.WriteLine("introduceti valoarea depusa: ");
+                    int valDepusa = int.Parse(Console.ReadLine());
+                    foundAccount.Sold += valDepusa;
+                    Console.WriteLine($"Noul sold este: {foundAccount.Sold}");
+                }
+                else if (optiune == 3)
+                {
+                    Console.WriteLine("introduceti valoarea retrasa: ");
+                    int valRetrasa = int.Parse(Console.ReadLine());
+                    if (valRetrasa > foundAccount.Sold)
+                    {
+                        Console.WriteLine("Fonduri insuficiente");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Sold curent: {foundAccount.Sold -= foundAccount.Sold - valRetrasa}");
+                    }
+                }
+                else if (optiune == 4)
+                {
+                    Console.WriteLine("introduceti noul pin: ");
+                    int pinNou = int.Parse(Console.ReadLine());
+                    string lungimePin = Console.ReadLine();
 
-            Console.ReadKey();
+                    if (lungimePin.Length < 6)
+                    {
+                        Console.WriteLine("Lungimea minima este de 6 caractere");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Pinul a fost schimbat");
+                        foundAccount.Pin = pinNou;
+                    }
+                }
+                else if (optiune == 5)
+                {
+                    break;
+                }
+                Console.ReadKey();
+            }
         }
-    }
 
-    public class Account
-    {
-        public int CardNumer { get; set; }
-        public int Pin { get; set; }
-        public double Sold { get; set; }
+        public class Account
+        {
+            public int CardNumer { get; set; }
+            public int Pin { get; set; }
+            public double Sold { get; set; }
+        }
     }
 }
