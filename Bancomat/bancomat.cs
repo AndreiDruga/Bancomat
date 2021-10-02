@@ -17,7 +17,7 @@ namespace ConsoleApp3
                 {
                     case 1:
                         start();
-                        Console.Clear();
+                        
                         break;
                     case 2:
 
@@ -135,8 +135,8 @@ namespace ConsoleApp3
         }
         public static void PrintMenu()
         {
-            Console.WriteLine("Alege o optiune:\n1: interogare solt \r\n2: depunere \r\n3: retragere \r\n4: schimbare pin \r\n5: logout");
             Console.Clear();
+            Console.WriteLine("Alege o optiune:\n1: interogare solt \r\n2: depunere \r\n3: retragere \r\n4: schimbare pin \r\n5: logout");
         }
         public static List<Account> ReadAccountsFromLines(string[] lines)
         {
