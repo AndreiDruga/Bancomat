@@ -1,28 +1,60 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 
-namespace Bancomat
+namespace ConsoleApp3
 {
-    class Account
+    public class Account
     {
-        private int CardNumer { get; set; }
-        private int Pin { get; set; }
-        private double Sold { get; set; }
+        private int cardNumber { get; set; }
+        private int pin { get; set; }
+        private double sold { get; set; }
 
         public Account(int cardNumber, int pin, double sold)
         {
-            cardNumber = CardNumer;
-            pin = Pin;
-            sold = Sold;
+            this.cardNumber = cardNumber;
+            this.pin = pin;
+            this.sold = sold;
+        }
+
+        public bool ValidateCredentials(int cardNumber, int pin)
+        {
+            return this.cardNumber == cardNumber && this.pin == pin;
+        }
+
+        public void ChangePin(int validPin)
+        {
+            pin = validPin;
+
         }
 
         public void PrintBalance()
         {
-            Console.WriteLine($"Soldul curent este: {Sold}");
+            Console.WriteLine($"Soldul contului curent este: {sold}");
         }
+
+        public void IncreaseSold(double addedValue)
+        {
+            sold += addedValue;
+        }
+
+        public void DecreaseSold(double value)
+        {
+            sold -= value;
+        }
+
+        public double SoldValue()
+        {
+            return sold;
+        }
+
+        public string[] ConvertToString()
+        {
+            string[] lines = {
+                this.cardNumber.ToString(),
+                   this.pin.ToString(),
+                    this.sold.ToString()};
+            return lines;
+        }
+
     }
 }
-    
