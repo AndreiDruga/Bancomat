@@ -81,7 +81,7 @@ namespace Bancomat
             }
         }
 
-        private static void PrintUnkownOption()
+        public static void PrintUnkownOption()
         {
             Console.WriteLine("Optiunea introdusa este invalida, te rog sa introduci o optiune valida!");
         }

@@ -16,17 +16,17 @@ namespace Bancomat
                 switch (optiune1)
                 {
                     case 1:
-                        banca.start();  //acceseaza accouunt si af toate optiunile
+                        banca.start(); 
                         break;
                     case 2:
                         banca.NewAccount();
                         banca.Exit();
                         break;
                     case 3:
-                        //banca.logOut();
+                        banca.Exit();
                         break;
                     default:
-                    
+                        banca.PrintUnkownOption();
                         break;
                 }
             }
