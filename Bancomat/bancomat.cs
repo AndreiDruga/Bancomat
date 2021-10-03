@@ -79,6 +79,7 @@ namespace ConsoleApp3
                         ChangePin(foundAccount);
                         break;
                     case 5:
+                       
                         SaveAccounts(accounts);
                         Exit();
                         break;
@@ -157,15 +158,7 @@ namespace ConsoleApp3
             }
             return accounts;
         }
-        private static void SaveAccounts(List<Account> accounts)
-        {
-
-            foreach (var account in accounts)
-            {
-                File.WriteAllLines("Conturi.txt", account.ConvertToString());
-
-            }
-        }
+        
         public static Account Authenticate(int cardNumber, int pin, List<Account> accounts)
         {
             foreach (var account in accounts)
