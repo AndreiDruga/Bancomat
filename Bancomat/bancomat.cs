@@ -20,7 +20,7 @@ namespace Bancomat
                         break;
                     case 2:
                         banca.NewAccount();
-                        
+                        banca.Exit();
                         break;
                     case 3:
                         //banca.logOut();

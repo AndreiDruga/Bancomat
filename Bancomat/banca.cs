@@ -85,7 +85,7 @@ namespace Bancomat
         {
             Console.WriteLine("Optiunea introdusa este invalida, te rog sa introduci o optiune valida!");
         }
-        private static void Exit()
+        public static void Exit()
         {
             Environment.Exit(0);
         }

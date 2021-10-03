@@ -1,6 +1,3 @@
 card_number:10
 pin:123
 sold:100.2
-card_number:123
-pin:111
-sold:1000
