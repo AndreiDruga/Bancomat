@@ -32,8 +32,9 @@ namespace Bancomat
         }
         public static void NewAccount()
         {
-            Console.WriteLine("Introduceti card number: ");
-            string[] text = { "card number: " + Console.ReadLine() , "Pin: " + Console.ReadLine() };
+            Console.WriteLine("Introduceti card number/pin/sold: ");
+            string[] text = { "card_number:" + Console.ReadLine(), "pin:" + Console.ReadLine(), "sold:" + Console.ReadLine()};
+           
             bool appendExistingFile = true;
             using (System.IO.StreamWriter sw = new System.IO.StreamWriter(@"Conturi.txt",
             appendExistingFile))
@@ -43,7 +44,7 @@ namespace Bancomat
             }
                 sw.Close();
             }
-            Exit();
+            banca.start();
         }
 
         private static void optiune(List<Account> accounts, Account foundAccount)
