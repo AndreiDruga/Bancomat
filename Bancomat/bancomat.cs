@@ -52,6 +52,11 @@ namespace ConsoleApp3
                 optiune(accounts, foundAccount);
             } 
         }
+        public static void NewAccount()
+        {
+            Console.WriteLine("Introduceti card number: ");
+            StreamWriter f = new StreamWriter("c:\\test\\lista.txt");
+        }
 
         private static void optiune(List<Account> accounts, Account foundAccount)
         {
