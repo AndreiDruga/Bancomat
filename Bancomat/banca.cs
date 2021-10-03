@@ -30,6 +30,7 @@ namespace Bancomat
                 optiune(accounts, foundAccount);
             }
         }
+
         public static void NewAccount()
         {
             Console.WriteLine("Introduceti card number/pin/sold: ");
@@ -85,6 +86,7 @@ namespace Bancomat
         {
             Console.WriteLine("Optiunea introdusa este invalida, te rog sa introduci o optiune valida!");
         }
+
         public static void Exit()
         {
             Environment.Exit(0);
@@ -105,6 +107,7 @@ namespace Bancomat
                 foundAccount.ChangePin(int.Parse(pinNou));
             }
         }
+
         private static void Withdraw(Account account)
         {
             Console.WriteLine("introduceti valoarea retrasa: ");
@@ -119,6 +122,7 @@ namespace Bancomat
                 account.PrintBalance();
             }
         }
+
         private static void Deposit(Account account)
         {
             Console.WriteLine("introduceti valoarea depusa: ");
@@ -127,11 +131,13 @@ namespace Bancomat
             account.PrintBalance();
 
         }
+
         public static void PrintMenu()
         {
             Console.Clear();
             Console.WriteLine("Alege o optiune:\n1: interogare solt \r\n2: depunere \r\n3: retragere \r\n4: schimbare pin \r\n5: logout");
         }
+
         public static List<Account> ReadAccountsFromLines(string[] lines)
         {
             List<Account> accounts = new List<Account>();
@@ -146,6 +152,7 @@ namespace Bancomat
             }
             return accounts;
         }
+
         private static void SaveAccounts(List<Account> accounts)
         {
 
@@ -155,6 +162,7 @@ namespace Bancomat
 
             }
         }
+
         public static Account Authenticate(int cardNumber, int pin, List<Account> accounts)
         {
             foreach (var account in accounts)
