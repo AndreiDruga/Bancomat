@@ -1,3 +1,0 @@
-card number:10
-pin:123456
-sold:1000

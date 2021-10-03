@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace ConsoleApp3
+namespace Bancomat
 {
     public class Account
     {

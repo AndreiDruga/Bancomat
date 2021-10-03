@@ -1,5 +1,4 @@
-﻿using ConsoleApp3;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
@@ -34,5 +33,6 @@ namespace Bancomat
             //bancomat.start
             //bancomat.start();
         }
+
     }
 }
