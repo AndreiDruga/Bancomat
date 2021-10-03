@@ -28,11 +28,7 @@ namespace Bancomat
     {
         private static void Main(string[] args)
         {
-            //bancomat.initializare
             bancomat.initializare();
-            //bancomat.start
-            //bancomat.start();
         }
-
     }
 }
