@@ -33,7 +33,17 @@ namespace Bancomat
         public static void NewAccount()
         {
             Console.WriteLine("Introduceti card number: ");
-            StreamWriter f = new StreamWriter("Conturi.txt");
+            string[] text = { "card number: " + Console.ReadLine() , "Pin: " + Console.ReadLine() };
+            bool appendExistingFile = true;
+            using (System.IO.StreamWriter sw = new System.IO.StreamWriter(@"Conturi.txt",
+            appendExistingFile))
+            { foreach (var ceva in text) {
+                    sw.WriteLine($"{ceva}");
+                    
+            }
+                sw.Close();
+            }
+            Exit();
         }
 
         private static void optiune(List<Account> accounts, Account foundAccount)
@@ -155,9 +165,6 @@ namespace Bancomat
             }
             return null;
         }
-
-
     }
-
     }
 

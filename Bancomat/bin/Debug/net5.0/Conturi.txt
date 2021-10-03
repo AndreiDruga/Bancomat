@@ -1,0 +1,6 @@
+card number: 10
+pin:123
+sold:100
+
+card number: 11111
+Pin: 00000
