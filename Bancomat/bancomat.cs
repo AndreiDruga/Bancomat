@@ -5,33 +5,34 @@ using System.Text;
 
 namespace Bancomat
 {
-    class bancomat
+    public class Bancomat
     {
-        public static void initializare()
-        {
+        public static void Initialize()
+        {    
+           
             Console.WriteLine("alege o optiune:\r\n 1.acceseaza cont \r\n 2.creeaza cont \r\n 3.inchidere bancomat");
             int optiune1 = int.Parse(Console.ReadLine());
-            while (optiune1 !=3)
+            while (optiune1 != 3)
             {
                 switch (optiune1)
                 {
                     case 1:
-                        banca.start(); 
+                        Banca.start();
                         break;
                     case 2:
-                        banca.NewAccount();
-                        banca.Exit();
+                        Banca.NewAccount();
+                        Banca.Exit();
                         break;
                     case 3:
-                        banca.Exit();
+                        Banca.Exit();
                         break;
                     default:
-                        banca.PrintUnkownOption();
+                        Banca.PrintUnkownOption();
                         break;
                 }
             }
         }
-        
+
     }
 }
 

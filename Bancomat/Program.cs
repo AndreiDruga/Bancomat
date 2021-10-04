@@ -28,7 +28,7 @@ namespace Bancomat
     {
         private static void Main(string[] args)
         {
-            bancomat.initializare();
+            Bancomat.Initialize();
         }
     }
 }

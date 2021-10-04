@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Bancomat
 {
-    class banca
+    class Banca
     {
 
         public static void start()
@@ -45,7 +45,7 @@ namespace Bancomat
             }
                 sw.Close();
             }
-            banca.start();
+            Banca.start();
         }
 
         private static void optiune(List<Account> accounts, Account foundAccount)
