@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Bancomat
 {
-    class Banca
+    public class Banca
     {
 
         public static void start()
@@ -34,15 +34,17 @@ namespace Bancomat
         public static void NewAccount()
         {
             Console.WriteLine("Introduceti card number/pin/sold: ");
-            string[] text = { "card_number:" + Console.ReadLine(), "pin:" + Console.ReadLine(), "sold:" + Console.ReadLine()};
-           
+            string[] text = { "card_number:" + Console.ReadLine(), "pin:" + Console.ReadLine(), "sold:" + Console.ReadLine() };
+
             bool appendExistingFile = true;
             using (System.IO.StreamWriter sw = new System.IO.StreamWriter(@"Conturi.txt",
             appendExistingFile))
-            { foreach (var ceva in text) {
+            {
+                foreach (var ceva in text)
+                {
                     sw.WriteLine($"{ceva}");
-                    
-            }
+
+                }
                 sw.Close();
             }
             Banca.start();
@@ -175,5 +177,5 @@ namespace Bancomat
             return null;
         }
     }
-    }
+}
 
